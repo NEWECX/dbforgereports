@@ -1,0 +1,1 @@
+"C:\Program Files\Devart\dbForge Studio for MySQL\dbforgemysql.com"/datareport /reportfile:"C:\Program Files\Devart\Reports\RitaniTopLevelFinancials.rdb" /format:jpeg /result email:"ReportingFinancials@ritani.com" /password:"cu$tomR0ck"

@@ -1,0 +1,719 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Devart (www.devart.com), the Report File -->
+<!-- Modifying this generated file will probably render it invalid -->
+<DevartDataReport>
+  <DatabaseProvider>59f90733-4d68-4fdf-82a7-f0fcbf5460aa</DatabaseProvider>
+  <Connection>
+    <Name>AttributionDB</Name>
+    <Category>00000000-0000-0000-0000-000000000000</Category>
+    <ConnectionString>User Id=root;Host=attribution-data.cxg3u5tpgfux.us-east-1.rds.amazonaws.com;Database=log_analysis;Character Set=utf8</ConnectionString>
+  </Connection>
+  <NativeReport>
+    <Report>/// &lt;XRTypeInfo&gt;
+///   &lt;AssemblyFullName&gt;DevExpress.XtraReports.v13.2, Version=13.2.8.0, Culture=neutral, PublicKeyToken=09af7300eec23701&lt;/AssemblyFullName&gt;
+///   &lt;AssemblyLocation&gt;C:\Program Files\Devart\dbForge Studio for MySQL\DevExpress.XtraReports.v13.2.dll&lt;/AssemblyLocation&gt;
+///   &lt;TypeName&gt;DevExpress.XtraReports.UI.XtraReport&lt;/TypeName&gt;
+///   &lt;Localization&gt;en-US&lt;/Localization&gt;
+///   &lt;Version&gt;13.2.8&lt;/Version&gt;
+///   &lt;References&gt;
+///     &lt;Reference Path="C:\Program Files\Devart\dbForge Studio for MySQL\Devart.DbForge.Data.MySql.dll" /&gt;
+///     &lt;Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll" /&gt;
+///     &lt;Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Configuration\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll" /&gt;
+///     &lt;Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Xml\v4.0_4.0.0.0__b77a5c561934e089\System.Xml.dll" /&gt;
+///     &lt;Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Data.SqlXml\v4.0_4.0.0.0__b77a5c561934e089\System.Data.SqlXml.dll" /&gt;
+///     &lt;Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Security\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Security.dll" /&gt;
+///     &lt;Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_64\System.Data\v4.0_4.0.0.0__b77a5c561934e089\System.Data.dll" /&gt;
+///     &lt;Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_64\System.Transactions\v4.0_4.0.0.0__b77a5c561934e089\System.Transactions.dll" /&gt;
+///     &lt;Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_64\System.EnterpriseServices\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.EnterpriseServices.dll" /&gt;
+///     &lt;Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.DirectoryServices\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.DirectoryServices.dll" /&gt;
+///     &lt;Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Runtime.Remoting\v4.0_4.0.0.0__b77a5c561934e089\System.Runtime.Remoting.dll" /&gt;
+///     &lt;Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_64\System.Web\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Web.dll" /&gt;
+///     &lt;Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\Microsoft.Build.Framework\v4.0_4.0.0.0__b03f5f7f11d50a3a\Microsoft.Build.Framework.dll" /&gt;
+///     &lt;Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Xaml\v4.0_4.0.0.0__b77a5c561934e089\System.Xaml.dll" /&gt;
+///     &lt;Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.ComponentModel.DataAnnotations\v4.0_4.0.0.0__31bf3856ad364e35\System.ComponentModel.DataAnnotations.dll" /&gt;
+///     &lt;Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Core\v4.0_4.0.0.0__b77a5c561934e089\System.Core.dll" /&gt;
+///     &lt;Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Numerics\v4.0_4.0.0.0__b77a5c561934e089\System.Numerics.dll" /&gt;
+///     &lt;Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Runtime.Caching\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Runtime.Caching.dll" /&gt;
+///     &lt;Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Web.ApplicationServices\v4.0_4.0.0.0__31bf3856ad364e35\System.Web.ApplicationServices.dll" /&gt;
+///     &lt;Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Drawing\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Drawing.dll" /&gt;
+///     &lt;Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Web.Services\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll" /&gt;
+///     &lt;Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Design\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Design.dll" /&gt;
+///     &lt;Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll" /&gt;
+///     &lt;Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\Accessibility\v4.0_4.0.0.0__b03f5f7f11d50a3a\Accessibility.dll" /&gt;
+///     &lt;Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Deployment\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Deployment.dll" /&gt;
+///     &lt;Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Runtime.Serialization.Formatters.Soap\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Runtime.Serialization.Formatters.Soap.dll" /&gt;
+///     &lt;Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Drawing.Design\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Drawing.Design.dll" /&gt;
+///     &lt;Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_64\System.Data.OracleClient\v4.0_4.0.0.0__b77a5c561934e089\System.Data.OracleClient.dll" /&gt;
+///     &lt;Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Web.RegularExpressions\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Web.RegularExpressions.dll" /&gt;
+///     &lt;Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\Microsoft.Build.Utilities.v4.0\v4.0_4.0.0.0__b03f5f7f11d50a3a\Microsoft.Build.Utilities.v4.0.dll" /&gt;
+///     &lt;Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.DirectoryServices.Protocols\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.DirectoryServices.Protocols.dll" /&gt;
+///     &lt;Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\Microsoft.Build.Tasks.v4.0\v4.0_4.0.0.0__b03f5f7f11d50a3a\Microsoft.Build.Tasks.v4.0.dll" /&gt;
+///     &lt;Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.ServiceProcess\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.ServiceProcess.dll" /&gt;
+///     &lt;Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Configuration.Install\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Configuration.Install.dll" /&gt;
+///     &lt;Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Runtime.Serialization\v4.0_4.0.0.0__b77a5c561934e089\System.Runtime.Serialization.dll" /&gt;
+///     &lt;Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.ServiceModel.Internals\v4.0_4.0.0.0__31bf3856ad364e35\System.ServiceModel.Internals.dll" /&gt;
+///     &lt;Reference Path="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\SMDiagnostics\v4.0_4.0.0.0__b77a5c561934e089\SMDiagnostics.dll" /&gt;
+///     &lt;Reference Path="C:\Program Files\Devart\dbForge Studio for MySQL\Devart.DbForge.Data.Interfaces.dll" /&gt;
+///   &lt;/References&gt;
+///   &lt;Resources&gt;
+///     &lt;Resource Name="XtraReportSerialization.MattPaidSearchDump"&gt;
+/// zsrvvgEAAACRAAAAbFN5c3RlbS5SZXNvdXJjZXMuUmVzb3VyY2VSZWFkZXIsIG1zY29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OSNTeXN0ZW0uUmVzb3VyY2VzLlJ1bnRpbWVSZXNvdXJjZVNldAIAAAABAAAAAAAAAFBBRFBBRFC9HWAKAAAAAPMAAAAybQB5AFMAcQBsAEMAbwBtAG0AYQBuAGQAMQAuAEMAbwBtAG0AYQBuAGQAVABlAHgAdAAAAAAAAaUFc2VsZWN0IGMub3JkZXJfbnVtYmVyLHMuc3RhcnRfdGltZSwgWUVBUihzLnN0YXJ0X3RpbWUpIEFTIFllYXIsIE1PTlRIKHMuc3RhcnRfdGltZSlBUyBNb250aCwgV0VFS09GWUVBUihzLnN0YXJ0X3RpbWUpIEFTIFdlZWtPZlll
+/// YXIsDQogIGNoYW5uZWxzLm5hbWUgYXMgY2hhbm5lbF9uYW1lLCBzLmxhbmRpbmdfcGFnZSwgY3QudXRtX21lZGl1bSwgY3QudXRtX3NvdXJjZSwgY3QudXRtX2NhbXBhaWduLCANCiAgY3QuaW5mZXJyZWRfdXRtX21lZGl1bSwgY3QuaW5mZXJyZWRfdXRtX3NvdXJjZSwgY3QuaW5mZXJyZWRfdXRtX2NhbXBhaWduLCBzLmF0dHJpYnV0ZWRfcmV2ZW51ZQ0KDQpmcm9tIA0KY2xpY2tzdHJlYW1zIGMsDQpzZXNzaW9ucyBzLA0Kc2Vzc2lvbl9lbnRyaWVzIHNlLA0KY2hhbm5lbF90b3VjaHBvaW50cyBjdCwNCmNoYW5uZWxzDQp3aGVyZQ0Kcy5jbGlja3N0cmVhbV9pZCA9IGMuaWQNCmFuZCBzZS5zZXNzaW9uX2lkID0gcy5pZA0KYW5kIGN0LnNlc3Npb25faWQgPSAg
+/// cy5pZA0KYW5kIGNoYW5uZWxzLmlkID0gY3QuY2hhbm5lbF9pZA0KYW5kIGMudHlwZT0nQ2xpY2tzdHJlYW1TdGl0Y2hlZE11bHRpcGFzcycNCkFORCBjaGFubmVscy5uYW1lID0gJ3BhaWQgc2VhcmNoJw0KQU5EIHMuYXR0cmlidXRlZF9yZXZlbnVlIE5PVCBJTiAoMCkNCmdyb3VwIGJ5IGMuaWQsIHMuaWQ=&lt;/Resource&gt;
+///   &lt;/Resources&gt;
+/// &lt;/XRTypeInfo&gt;
+namespace XtraReportSerialization {
+    
+    public class MattPaidSearchDump : DevExpress.XtraReports.UI.XtraReport {
+        private DevExpress.XtraReports.UI.DetailBand Detail;
+        private DevExpress.XtraReports.UI.XRTable table2;
+        private DevExpress.XtraReports.UI.XRTableRow tableRow4;
+        private DevExpress.XtraReports.UI.XRTableCell tableCell8;
+        private DevExpress.XtraReports.UI.XRTableCell tableCell10;
+        private DevExpress.XtraReports.UI.XRTableCell tableCell12;
+        private DevExpress.XtraReports.UI.XRTableCell tableCell14;
+        private DevExpress.XtraReports.UI.XRTableCell tableCell16;
+        private DevExpress.XtraReports.UI.XRTableCell tableCell18;
+        private DevExpress.XtraReports.UI.XRTableCell tableCell20;
+        private DevExpress.XtraReports.UI.XRTableCell tableCell22;
+        private DevExpress.XtraReports.UI.XRTableCell tableCell24;
+        private DevExpress.XtraReports.UI.XRTableCell tableCell26;
+        private DevExpress.XtraReports.UI.XRTableCell tableCell28;
+        private DevExpress.XtraReports.UI.XRTableCell tableCell30;
+        private DevExpress.XtraReports.UI.XRTableCell tableCell32;
+        private DevExpress.XtraReports.UI.XRTableCell tableCell34;
+        private DevExpress.XtraReports.UI.PageHeaderBand pageHeaderBand1;
+        private DevExpress.XtraReports.UI.XRTable table1;
+        private DevExpress.XtraReports.UI.XRTableRow tableRow3;
+        private DevExpress.XtraReports.UI.XRTableCell tableCell7;
+        private DevExpress.XtraReports.UI.XRTableCell tableCell9;
+        private DevExpress.XtraReports.UI.XRTableCell tableCell11;
+        private DevExpress.XtraReports.UI.XRTableCell tableCell13;
+        private DevExpress.XtraReports.UI.XRTableCell tableCell15;
+        private DevExpress.XtraReports.UI.XRTableCell tableCell17;
+        private DevExpress.XtraReports.UI.XRTableCell tableCell19;
+        private DevExpress.XtraReports.UI.XRTableCell tableCell21;
+        private DevExpress.XtraReports.UI.XRTableCell tableCell23;
+        private DevExpress.XtraReports.UI.XRTableCell tableCell25;
+        private DevExpress.XtraReports.UI.XRTableCell tableCell27;
+        private DevExpress.XtraReports.UI.XRTableCell tableCell29;
+        private DevExpress.XtraReports.UI.XRTableCell tableCell31;
+        private DevExpress.XtraReports.UI.XRTableCell tableCell33;
+        private DevExpress.XtraReports.UI.TopMarginBand topMarginBand1;
+        private DevExpress.XtraReports.UI.BottomMarginBand bottomMarginBand1;
+        private Devart.Data.MySql.MySqlDataAdapter QueryTableAdapter;
+        private Devart.Data.MySql.MySqlCommand mySqlCommand1;
+        private Devart.Data.MySql.MySqlDataSet MattPaidSearchDumpData;
+        private DevExpress.XtraReports.UI.XRControlStyle Title;
+        private DevExpress.XtraReports.UI.XRControlStyle FieldCaption;
+        private DevExpress.XtraReports.UI.XRControlStyle PageInfo;
+        private DevExpress.XtraReports.UI.XRControlStyle DataField;
+        private DevExpress.XtraReports.UI.XRTableRow tableRow1;
+        private DevExpress.XtraReports.UI.XRTableCell tableCell1;
+        private DevExpress.XtraReports.UI.XRTableCell tableCell2;
+        private DevExpress.XtraReports.UI.XRTableCell tableCell3;
+        private DevExpress.XtraReports.UI.XRTableRow tableRow2;
+        private DevExpress.XtraReports.UI.XRTableCell tableCell4;
+        private DevExpress.XtraReports.UI.XRTableCell tableCell5;
+        private DevExpress.XtraReports.UI.XRTableCell tableCell6;
+        private System.Resources.ResourceManager _resources;
+        private string _resourceString;
+        public MattPaidSearchDump() {
+            this._resourceString = DevExpress.XtraReports.Serialization.XRResourceManager.GetResourceFor("XtraReportSerialization.MattPaidSearchDump");
+            this.InitializeComponent();
+        }
+        private System.Resources.ResourceManager resources {
+            get {
+                if (_resources == null) {
+                    this._resources = new DevExpress.XtraReports.Serialization.XRResourceManager(this._resourceString);
+                }
+                return this._resources;
+            }
+        }
+        private void InitializeComponent() {
+            this.Detail = new DevExpress.XtraReports.UI.DetailBand();
+            this.pageHeaderBand1 = new DevExpress.XtraReports.UI.PageHeaderBand();
+            this.topMarginBand1 = new DevExpress.XtraReports.UI.TopMarginBand();
+            this.bottomMarginBand1 = new DevExpress.XtraReports.UI.BottomMarginBand();
+            this.table2 = new DevExpress.XtraReports.UI.XRTable();
+            this.tableRow4 = new DevExpress.XtraReports.UI.XRTableRow();
+            this.tableCell8 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.tableCell10 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.tableCell12 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.tableCell14 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.tableCell16 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.tableCell18 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.tableCell20 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.tableCell22 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.tableCell24 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.tableCell26 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.tableCell28 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.tableCell30 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.tableCell32 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.tableCell34 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.table1 = new DevExpress.XtraReports.UI.XRTable();
+            this.tableRow3 = new DevExpress.XtraReports.UI.XRTableRow();
+            this.tableCell7 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.tableCell9 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.tableCell11 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.tableCell13 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.tableCell15 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.tableCell17 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.tableCell19 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.tableCell21 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.tableCell23 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.tableCell25 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.tableCell27 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.tableCell29 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.tableCell31 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.tableCell33 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.QueryTableAdapter = new Devart.Data.MySql.MySqlDataAdapter();
+            this.mySqlCommand1 = new Devart.Data.MySql.MySqlCommand();
+            this.MattPaidSearchDumpData = new Devart.Data.MySql.MySqlDataSet();
+            this.Title = new DevExpress.XtraReports.UI.XRControlStyle();
+            this.FieldCaption = new DevExpress.XtraReports.UI.XRControlStyle();
+            this.PageInfo = new DevExpress.XtraReports.UI.XRControlStyle();
+            this.DataField = new DevExpress.XtraReports.UI.XRControlStyle();
+            this.tableRow1 = new DevExpress.XtraReports.UI.XRTableRow();
+            this.tableCell1 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.tableCell2 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.tableCell3 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.tableRow2 = new DevExpress.XtraReports.UI.XRTableRow();
+            this.tableCell4 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.tableCell5 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.tableCell6 = new DevExpress.XtraReports.UI.XRTableCell();
+            ((System.ComponentModel.ISupportInitialize)(this.table2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.table1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MattPaidSearchDumpData)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
+            // 
+            // Detail
+            // 
+            this.Detail.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+                        this.table2});
+            this.Detail.HeightF = 23F;
+            this.Detail.Name = "Detail";
+            // 
+            // pageHeaderBand1
+            // 
+            this.pageHeaderBand1.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+                        this.table1});
+            this.pageHeaderBand1.HeightF = 42F;
+            this.pageHeaderBand1.Name = "pageHeaderBand1";
+            // 
+            // topMarginBand1
+            // 
+            this.topMarginBand1.Name = "topMarginBand1";
+            // 
+            // bottomMarginBand1
+            // 
+            this.bottomMarginBand1.Name = "bottomMarginBand1";
+            // 
+            // table2
+            // 
+            this.table2.AnchorVertical = ((DevExpress.XtraReports.UI.VerticalAnchorStyles)((DevExpress.XtraReports.UI.VerticalAnchorStyles.Top | DevExpress.XtraReports.UI.VerticalAnchorStyles.Bottom)));
+            this.table2.LocationFloat = new DevExpress.Utils.PointFloat(6F, 0F);
+            this.table2.Name = "table2";
+            this.table2.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
+                        this.tableRow4});
+            this.table2.SizeF = new System.Drawing.SizeF(638F, 23F);
+            // 
+            // tableRow4
+            // 
+            this.tableRow4.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
+                        this.tableCell8,
+                        this.tableCell10,
+                        this.tableCell12,
+                        this.tableCell14,
+                        this.tableCell16,
+                        this.tableCell18,
+                        this.tableCell20,
+                        this.tableCell22,
+                        this.tableCell24,
+                        this.tableCell26,
+                        this.tableCell28,
+                        this.tableCell30,
+                        this.tableCell32,
+                        this.tableCell34});
+            this.tableRow4.Name = "tableRow4";
+            this.tableRow4.Weight = 1D;
+            // 
+            // tableCell8
+            // 
+            this.tableCell8.CanGrow = false;
+            this.tableCell8.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "Query.order_number")});
+            this.tableCell8.Name = "tableCell8";
+            this.tableCell8.StyleName = "DataField";
+            this.tableCell8.Text = "tableCell8";
+            this.tableCell8.Weight = 6.2857142857142856D;
+            // 
+            // tableCell10
+            // 
+            this.tableCell10.CanGrow = false;
+            this.tableCell10.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "Query.start_time")});
+            this.tableCell10.Name = "tableCell10";
+            this.tableCell10.StyleName = "DataField";
+            this.tableCell10.Text = "tableCell10";
+            this.tableCell10.Weight = 4.4285714285714288D;
+            // 
+            // tableCell12
+            // 
+            this.tableCell12.CanGrow = false;
+            this.tableCell12.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "Query.Year")});
+            this.tableCell12.Name = "tableCell12";
+            this.tableCell12.StyleName = "DataField";
+            this.tableCell12.Text = "tableCell12";
+            this.tableCell12.Weight = 2.1428571428571428D;
+            // 
+            // tableCell14
+            // 
+            this.tableCell14.CanGrow = false;
+            this.tableCell14.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "Query.Month")});
+            this.tableCell14.Name = "tableCell14";
+            this.tableCell14.StyleName = "DataField";
+            this.tableCell14.Text = "tableCell14";
+            this.tableCell14.Weight = 2.8571428571428572D;
+            // 
+            // tableCell16
+            // 
+            this.tableCell16.CanGrow = false;
+            this.tableCell16.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "Query.WeekOfYear")});
+            this.tableCell16.Name = "tableCell16";
+            this.tableCell16.StyleName = "DataField";
+            this.tableCell16.Text = "tableCell16";
+            this.tableCell16.Weight = 6.2857142857142856D;
+            // 
+            // tableCell18
+            // 
+            this.tableCell18.CanGrow = false;
+            this.tableCell18.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "Query.channel_name")});
+            this.tableCell18.Name = "tableCell18";
+            this.tableCell18.StyleName = "DataField";
+            this.tableCell18.Text = "tableCell18";
+            this.tableCell18.Weight = 6.4285714285714288D;
+            // 
+            // tableCell20
+            // 
+            this.tableCell20.CanGrow = false;
+            this.tableCell20.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "Query.landing_page")});
+            this.tableCell20.Name = "tableCell20";
+            this.tableCell20.StyleName = "DataField";
+            this.tableCell20.Text = "tableCell20";
+            this.tableCell20.Weight = 6D;
+            // 
+            // tableCell22
+            // 
+            this.tableCell22.CanGrow = false;
+            this.tableCell22.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "Query.utm_medium")});
+            this.tableCell22.Name = "tableCell22";
+            this.tableCell22.StyleName = "DataField";
+            this.tableCell22.Text = "tableCell22";
+            this.tableCell22.Weight = 5.8571428571428568D;
+            // 
+            // tableCell24
+            // 
+            this.tableCell24.CanGrow = false;
+            this.tableCell24.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "Query.utm_source")});
+            this.tableCell24.Name = "tableCell24";
+            this.tableCell24.StyleName = "DataField";
+            this.tableCell24.Text = "tableCell24";
+            this.tableCell24.Weight = 5.2857142857142856D;
+            // 
+            // tableCell26
+            // 
+            this.tableCell26.CanGrow = false;
+            this.tableCell26.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "Query.utm_campaign")});
+            this.tableCell26.Name = "tableCell26";
+            this.tableCell26.StyleName = "DataField";
+            this.tableCell26.Text = "tableCell26";
+            this.tableCell26.Weight = 6.5714285714285712D;
+            // 
+            // tableCell28
+            // 
+            this.tableCell28.CanGrow = false;
+            this.tableCell28.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "Query.inferred_utm_medium")});
+            this.tableCell28.Name = "tableCell28";
+            this.tableCell28.StyleName = "DataField";
+            this.tableCell28.Text = "tableCell28";
+            this.tableCell28.Weight = 9.7142857142857135D;
+            // 
+            // tableCell30
+            // 
+            this.tableCell30.CanGrow = false;
+            this.tableCell30.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "Query.inferred_utm_source")});
+            this.tableCell30.Name = "tableCell30";
+            this.tableCell30.StyleName = "DataField";
+            this.tableCell30.Text = "tableCell30";
+            this.tableCell30.Weight = 9.1428571428571423D;
+            // 
+            // tableCell32
+            // 
+            this.tableCell32.CanGrow = false;
+            this.tableCell32.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "Query.inferred_utm_campaign")});
+            this.tableCell32.Name = "tableCell32";
+            this.tableCell32.StyleName = "DataField";
+            this.tableCell32.Text = "tableCell32";
+            this.tableCell32.Weight = 10.571428571428571D;
+            // 
+            // tableCell34
+            // 
+            this.tableCell34.CanGrow = false;
+            this.tableCell34.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "Query.attributed_revenue")});
+            this.tableCell34.Name = "tableCell34";
+            this.tableCell34.StyleName = "DataField";
+            this.tableCell34.Text = "tableCell34";
+            this.tableCell34.Weight = 8.5714285714285712D;
+            // 
+            // table1
+            // 
+            this.table1.AnchorVertical = DevExpress.XtraReports.UI.VerticalAnchorStyles.Bottom;
+            this.table1.LocationFloat = new DevExpress.Utils.PointFloat(6F, 6F);
+            this.table1.Name = "table1";
+            this.table1.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
+                        this.tableRow3});
+            this.table1.SizeF = new System.Drawing.SizeF(638F, 36F);
+            // 
+            // tableRow3
+            // 
+            this.tableRow3.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
+                        this.tableCell7,
+                        this.tableCell9,
+                        this.tableCell11,
+                        this.tableCell13,
+                        this.tableCell15,
+                        this.tableCell17,
+                        this.tableCell19,
+                        this.tableCell21,
+                        this.tableCell23,
+                        this.tableCell25,
+                        this.tableCell27,
+                        this.tableCell29,
+                        this.tableCell31,
+                        this.tableCell33});
+            this.tableRow3.Name = "tableRow3";
+            this.tableRow3.Weight = 1D;
+            // 
+            // tableCell7
+            // 
+            this.tableCell7.CanGrow = false;
+            this.tableCell7.Name = "tableCell7";
+            this.tableCell7.StyleName = "FieldCaption";
+            this.tableCell7.Text = "order number";
+            this.tableCell7.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            this.tableCell7.Weight = 6.2857142857142856D;
+            // 
+            // tableCell9
+            // 
+            this.tableCell9.CanGrow = false;
+            this.tableCell9.Name = "tableCell9";
+            this.tableCell9.StyleName = "FieldCaption";
+            this.tableCell9.Text = "start time";
+            this.tableCell9.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            this.tableCell9.Weight = 4.4285714285714288D;
+            // 
+            // tableCell11
+            // 
+            this.tableCell11.CanGrow = false;
+            this.tableCell11.Name = "tableCell11";
+            this.tableCell11.StyleName = "FieldCaption";
+            this.tableCell11.Text = "Year";
+            this.tableCell11.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            this.tableCell11.Weight = 2.1428571428571428D;
+            // 
+            // tableCell13
+            // 
+            this.tableCell13.CanGrow = false;
+            this.tableCell13.Name = "tableCell13";
+            this.tableCell13.StyleName = "FieldCaption";
+            this.tableCell13.Text = "Month";
+            this.tableCell13.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            this.tableCell13.Weight = 2.8571428571428572D;
+            // 
+            // tableCell15
+            // 
+            this.tableCell15.CanGrow = false;
+            this.tableCell15.Name = "tableCell15";
+            this.tableCell15.StyleName = "FieldCaption";
+            this.tableCell15.Text = "Week Of Year";
+            this.tableCell15.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            this.tableCell15.Weight = 6.2857142857142856D;
+            // 
+            // tableCell17
+            // 
+            this.tableCell17.CanGrow = false;
+            this.tableCell17.Name = "tableCell17";
+            this.tableCell17.StyleName = "FieldCaption";
+            this.tableCell17.Text = "channel name";
+            this.tableCell17.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            this.tableCell17.Weight = 6.4285714285714288D;
+            // 
+            // tableCell19
+            // 
+            this.tableCell19.CanGrow = false;
+            this.tableCell19.Name = "tableCell19";
+            this.tableCell19.StyleName = "FieldCaption";
+            this.tableCell19.Text = "landing page";
+            this.tableCell19.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            this.tableCell19.Weight = 6D;
+            // 
+            // tableCell21
+            // 
+            this.tableCell21.CanGrow = false;
+            this.tableCell21.Name = "tableCell21";
+            this.tableCell21.StyleName = "FieldCaption";
+            this.tableCell21.Text = "utm medium";
+            this.tableCell21.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            this.tableCell21.Weight = 5.8571428571428568D;
+            // 
+            // tableCell23
+            // 
+            this.tableCell23.CanGrow = false;
+            this.tableCell23.Name = "tableCell23";
+            this.tableCell23.StyleName = "FieldCaption";
+            this.tableCell23.Text = "utm source";
+            this.tableCell23.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            this.tableCell23.Weight = 5.2857142857142856D;
+            // 
+            // tableCell25
+            // 
+            this.tableCell25.CanGrow = false;
+            this.tableCell25.Name = "tableCell25";
+            this.tableCell25.StyleName = "FieldCaption";
+            this.tableCell25.Text = "utm campaign";
+            this.tableCell25.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            this.tableCell25.Weight = 6.5714285714285712D;
+            // 
+            // tableCell27
+            // 
+            this.tableCell27.CanGrow = false;
+            this.tableCell27.Name = "tableCell27";
+            this.tableCell27.StyleName = "FieldCaption";
+            this.tableCell27.Text = "inferred utm medium";
+            this.tableCell27.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            this.tableCell27.Weight = 9.7142857142857135D;
+            // 
+            // tableCell29
+            // 
+            this.tableCell29.CanGrow = false;
+            this.tableCell29.Name = "tableCell29";
+            this.tableCell29.StyleName = "FieldCaption";
+            this.tableCell29.Text = "inferred utm source";
+            this.tableCell29.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            this.tableCell29.Weight = 9.1428571428571423D;
+            // 
+            // tableCell31
+            // 
+            this.tableCell31.CanGrow = false;
+            this.tableCell31.Name = "tableCell31";
+            this.tableCell31.StyleName = "FieldCaption";
+            this.tableCell31.Text = "inferred utm campaign";
+            this.tableCell31.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            this.tableCell31.Weight = 10.571428571428571D;
+            // 
+            // tableCell33
+            // 
+            this.tableCell33.CanGrow = false;
+            this.tableCell33.Name = "tableCell33";
+            this.tableCell33.StyleName = "FieldCaption";
+            this.tableCell33.Text = "attributed revenue";
+            this.tableCell33.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            this.tableCell33.Weight = 8.5714285714285712D;
+            // 
+            // QueryTableAdapter
+            // 
+            this.QueryTableAdapter.DeleteCommand = null;
+            this.QueryTableAdapter.InsertCommand = null;
+            this.QueryTableAdapter.SelectCommand = this.mySqlCommand1;
+            this.QueryTableAdapter.TableMappings.AddRange(new System.Data.Common.DataTableMapping[] {
+                        new System.Data.Common.DataTableMapping("Table", "Query", new System.Data.Common.DataColumnMapping[0])});
+            this.QueryTableAdapter.UpdateCommand = null;
+            // 
+            // mySqlCommand1
+            // 
+            this.mySqlCommand1.CommandText = resources.GetString("mySqlCommand1.CommandText");
+            this.mySqlCommand1.CommandTimeout = 0;
+            this.mySqlCommand1.Connection = null;
+            this.mySqlCommand1.Name = "mySqlCommand1";
+            // 
+            // MattPaidSearchDumpData
+            // 
+            this.MattPaidSearchDumpData.Connection = null;
+            this.MattPaidSearchDumpData.DataSetName = "MattPaidSearchDumpData";
+            this.MattPaidSearchDumpData.Name = "MattPaidSearchDumpData";
+            // 
+            // Title
+            // 
+            this.Title.BackColor = System.Drawing.Color.Transparent;
+            this.Title.BorderColor = System.Drawing.Color.Black;
+            this.Title.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.Title.BorderWidth = 1F;
+            this.Title.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Bold);
+            this.Title.ForeColor = System.Drawing.Color.Maroon;
+            this.Title.Name = "Title";
+            // 
+            // FieldCaption
+            // 
+            this.FieldCaption.BackColor = System.Drawing.Color.Transparent;
+            this.FieldCaption.BorderColor = System.Drawing.Color.Black;
+            this.FieldCaption.Borders = DevExpress.XtraPrinting.BorderSide.Bottom;
+            this.FieldCaption.BorderWidth = 1F;
+            this.FieldCaption.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
+            this.FieldCaption.ForeColor = System.Drawing.Color.Maroon;
+            this.FieldCaption.Name = "FieldCaption";
+            // 
+            // PageInfo
+            // 
+            this.PageInfo.BackColor = System.Drawing.Color.Transparent;
+            this.PageInfo.BorderColor = System.Drawing.Color.Black;
+            this.PageInfo.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.PageInfo.BorderWidth = 1F;
+            this.PageInfo.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
+            this.PageInfo.ForeColor = System.Drawing.Color.Black;
+            this.PageInfo.Name = "PageInfo";
+            // 
+            // DataField
+            // 
+            this.DataField.BackColor = System.Drawing.Color.Transparent;
+            this.DataField.BorderColor = System.Drawing.Color.Black;
+            this.DataField.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.DataField.BorderWidth = 1F;
+            this.DataField.Font = new System.Drawing.Font("Times New Roman", 10F);
+            this.DataField.ForeColor = System.Drawing.Color.Black;
+            this.DataField.Name = "DataField";
+            this.DataField.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            // 
+            // tableRow1
+            // 
+            this.tableRow1.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
+                        this.tableCell1,
+                        this.tableCell2,
+                        this.tableCell3});
+            this.tableRow1.Name = "tableRow1";
+            this.tableRow1.Weight = 1D;
+            // 
+            // tableCell1
+            // 
+            this.tableCell1.Name = "tableCell1";
+            this.tableCell1.Text = "tableCell1";
+            this.tableCell1.Weight = 1D;
+            // 
+            // tableCell2
+            // 
+            this.tableCell2.Name = "tableCell2";
+            this.tableCell2.Text = "tableCell2";
+            this.tableCell2.Weight = 1D;
+            // 
+            // tableCell3
+            // 
+            this.tableCell3.Name = "tableCell3";
+            this.tableCell3.Text = "tableCell3";
+            this.tableCell3.Weight = 1D;
+            // 
+            // tableRow2
+            // 
+            this.tableRow2.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
+                        this.tableCell4,
+                        this.tableCell5,
+                        this.tableCell6});
+            this.tableRow2.Name = "tableRow2";
+            this.tableRow2.Weight = 1D;
+            // 
+            // tableCell4
+            // 
+            this.tableCell4.Name = "tableCell4";
+            this.tableCell4.Text = "tableCell4";
+            this.tableCell4.Weight = 1D;
+            // 
+            // tableCell5
+            // 
+            this.tableCell5.Name = "tableCell5";
+            this.tableCell5.Text = "tableCell5";
+            this.tableCell5.Weight = 1D;
+            // 
+            // tableCell6
+            // 
+            this.tableCell6.Name = "tableCell6";
+            this.tableCell6.Text = "tableCell6";
+            this.tableCell6.Weight = 1D;
+            // 
+            // MattPaidSearchDump
+            // 
+            this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
+                        this.Detail,
+                        this.pageHeaderBand1,
+                        this.topMarginBand1,
+                        this.bottomMarginBand1});
+            this.DataAdapter = this.QueryTableAdapter;
+            this.DataMember = "Query";
+            this.DataSource = this.MattPaidSearchDumpData;
+            this.Name = "MattPaidSearchDump";
+            this.PageHeight = 1100;
+            this.PageWidth = 850;
+            this.StyleSheet.AddRange(new DevExpress.XtraReports.UI.XRControlStyle[] {
+                        this.Title,
+                        this.FieldCaption,
+                        this.PageInfo,
+                        this.DataField});
+            this.Version = "13.2";
+            ((System.ComponentModel.ISupportInitialize)(this.table2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.table1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MattPaidSearchDumpData)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
+        }
+    }
+}
+</Report>
+  </NativeReport>
+  <DataSourceInfo>
+    <Count>1</Count>
+    <Name>Query</Name>
+    <Database />
+    <DataObjectPath />
+    <Type>2</Type>
+  </DataSourceInfo>
+  <DataSource>
+    <xs:schema id="MattPaidSearchDumpData" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <xs:element name="MattPaidSearchDumpData" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msdata:Name="MattPaidSearchDumpData">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="Query">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="order_number" type="xs:string" minOccurs="0" />
+                  <xs:element name="start_time" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="Year" msdata:ReadOnly="true" type="xs:long" minOccurs="0" />
+                  <xs:element name="Month" msdata:ReadOnly="true" type="xs:long" minOccurs="0" />
+                  <xs:element name="WeekOfYear" msdata:ReadOnly="true" type="xs:long" minOccurs="0" />
+                  <xs:element name="channel_name" type="xs:string" minOccurs="0" />
+                  <xs:element name="landing_page" type="xs:string" minOccurs="0" />
+                  <xs:element name="utm_medium" type="xs:string" minOccurs="0" />
+                  <xs:element name="utm_source" type="xs:string" minOccurs="0" />
+                  <xs:element name="utm_campaign" type="xs:string" minOccurs="0" />
+                  <xs:element name="inferred_utm_medium" type="xs:string" minOccurs="0" />
+                  <xs:element name="inferred_utm_source" type="xs:string" minOccurs="0" />
+                  <xs:element name="inferred_utm_campaign" type="xs:string" minOccurs="0" />
+                  <xs:element name="attributed_revenue" type="xs:float" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+    <ActiveDataMember>Query</ActiveDataMember>
+  </DataSource>
+</DevartDataReport>
